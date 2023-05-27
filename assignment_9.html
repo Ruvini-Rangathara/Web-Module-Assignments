@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment_9</title>
+
+    <style>
+
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #main_sec{
+            margin-top: 25%;
+            animation-name: ani_main;
+            animation-duration: 2s;
+        }
+
+        p{
+            text-align: center;
+            margin: 0;
+        }
+
+        #div_sec{
+            display: flex;
+
+        }
+
+        p{
+            color: red;
+            font-size: 18px;
+        }
+
+        hr{
+            margin: 5px;
+        }
+
+        button{
+            width: 75px;
+            height: 30px;
+            margin: 10px;
+            font-size: 14px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        #start{
+            background-color: green;
+            color: white;
+        }
+        #stop{
+            background-color: grey;
+            color: white;
+        }
+
+
+        div {
+            width: 50px;
+            height: 30px;
+            margin-left: 5px;
+        }
+
+        div:first-child{
+            animation-name: ani_1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: white;
+        }
+
+        div:nth-child(2){
+            animation-name: ani_2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: darksalmon;
+        }
+
+        div:nth-child(3){
+            animation-name: ani_3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: coral;
+        }
+
+        div:nth-child(4){
+            animation-name: ani_4;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color:red;
+        }
+        div:nth-child(5){
+            animation-name: ani_3;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: coral;
+        }
+        div:nth-child(6){
+            animation-name: ani_2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: darksalmon;
+        }
+        div:nth-child(7){
+            animation-name: ani_1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            background-color: white;
+        }
+
+        @keyframes ani_1{
+            0% ,100%  {
+                background-color: white;
+            }
+            17% ,85%  {
+                background-color: darksalmon;
+            }
+            34%,68%  {
+                background-color: coral;
+            }
+            51% {
+                background-color: red;
+            }
+        }
+
+        @keyframes ani_2{
+            0% ,100%  {
+                background-color: darksalmon;
+            }
+            17% ,85%  {
+                background-color: coral;
+            }
+            34%,68%  {
+                background-color: red;
+            }
+            51% {
+                background-color: white;
+            }
+        }
+
+
+        @keyframes ani_3{
+            0% ,100%  {
+                background-color: coral;
+            }
+            17% ,85%  {
+                background-color: red;
+            }
+            34%,68%  {
+                background-color: white;
+            }
+            51% {
+                background-color: darksalmon;
+            }
+        }
+
+        @keyframes ani_4{
+            0% ,100%  {
+                background-color: red;
+            }
+            17% ,85%  {
+                background-color: white;
+            }
+            34%,68%  {
+                background-color: darksalmon;
+            }
+            51% {
+                background-color: coral;
+            }
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<section id="main_sec">
+
+    <p>JavaScript Knight Rider</p>
+    <hr>
+    <section id="div_sec">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <hr>
+
+</section>
+
+<!--<section>-->
+<!--    <button id="start" onclick="start_animation">Start</button>-->
+<!--    <button id="stop" onclick="stop_animation">Stop</button>-->
+<!--</section>-->
+
+
+</body>
+</html>
