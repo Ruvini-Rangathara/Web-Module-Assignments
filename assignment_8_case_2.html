@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 08</title>
+
+  <style>
+
+    body{
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    #main_sec{
+      width: 80%;
+      margin-top: 30px;
+      position: relative;
+    }
+
+    p{
+      text-align: center;
+      margin: 0;
+      margin-bottom: 200px;
+    }
+
+    #div_sec{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p{
+      color: white;
+      font-size: 28px;
+    }
+
+    hr{
+      margin: 10px;
+      width: 60%;
+    }
+
+    button{
+      width: 75px;
+      height: 30px;
+      margin: 10px;
+      font-size: 14px;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+
+    #sec2{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    div {
+      width: 85px;
+      height: 45px;
+      margin-left: 5px;
+    }
+
+    #first_div{
+      /*background-color: darkorchid;*/
+      background-color: blue;
+    }
+
+    #second_div{
+      background-color: chartreuse;
+    }
+
+    #third_div{
+      background-color: orangered;
+    }
+
+    #fourth_div{
+      background-color:dodgerblue;
+    }
+    #fifth_div{
+      background-color: cornsilk;
+    }
+    #last_div{
+      background-color: darkgoldenrod;
+    }
+
+    #first_div{
+      left: 0;
+    }
+
+    #last_div{
+      position: absolute;
+      right: 0;
+    }
+
+  </style>
+
+</head>
+<body>
+<section id="main_sec">
+
+  <p>JavaScript Queue</p>
+  <div id="first_div"></div>
+
+  <section id="sec2">
+    <hr>
+    <section id="div_sec">
+      <div id="second_div"></div>
+      <div id="third_div"></div>
+      <div id="fourth_div"></div>
+      <div id="fifth_div"></div>
+<!--      <div></div>-->
+<!--      <div></div>-->
+<!--      <div></div>-->
+    </section>
+    <hr>
+  </section>
+  <div id="last_div"></div>
+</section>
+
+<script>
+  // var element = document.getElementById("first_div");
+  // var colors = ["red", "green", "blue"]; // Array of colors
+  // var currentIndex = 0; // Current color index
+  //
+  // setInterval(function() {
+  //   var currentColor = colors[currentIndex];
+  //   element.style.color = currentColor;
+  //   currentIndex = (currentIndex + 1) % colors.length;
+  // }, 2000);
+
+  function changeContent() {
+    var element = document.getElementById("first_div");
+    var computedStyle = window.getComputedStyle(element);
+    var color = computedStyle.color;
+
+    if (color === 'rgb(0, 0, 255)') {
+      element.style.color = 'red';
+    }
+
+  }
+
+
+
+  setTimeout(changeContent, 2000);
+
+
+</script>
+
+</body>
+</html>
